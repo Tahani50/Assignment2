@@ -1,0 +1,66 @@
+/* General Styles */ 
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1{
+  margin: 30px;
+  color: #6C63FF ;
+}
+
+.gap{
+  height: 100px;
+}
+
+
+/* Responsive Image Gallery (CSS Grid) */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px); /* Responsive columns */
+  gap: 30px;
+  justify-content: center;
+  
+}
+
+.gallery img {
+  border: solid black;
+  padding: 20px;
+}
+
+.gallery img:hover{
+  background-color: #6b63ff1f;
+}
+
+
+/* Responsive Flexbox Layout */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    width: 90%;
+    margin: auto;
+  }
+  
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
+  .flex-container div {
+    display: flex;
+    width: 90%;
+    height: 5rem;
+    margin: 20px;
+    background-color: #6C63FF;
+    color: white;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 25px;
+  }
+
+
+  
+
